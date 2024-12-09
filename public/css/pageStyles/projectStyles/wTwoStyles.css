@@ -1,0 +1,103 @@
+/* WORK CITED STYLES */
+.cite-holder {
+    margin-top: 1vw;
+    padding: 1% 4%;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    width: -moz-fit-content;
+    width: fit-content;
+    text-indent: 0;
+    word-wrap: break-word;
+    text-align: left;
+}
+
+.cite-holder p {
+    padding-left: 22px;
+    text-indent: -2rem;
+    margin-bottom: .5rem;
+    font-size: 1rem;
+}
+
+.works-cited {
+    font-size: 2rem;
+    text-align: center;
+}
+
+.w-cite a {
+    word-break: break-all;
+    overflow-wrap: break-word;
+}
+
+.w-cite a:link {
+    color: #7C7575;
+}
+
+.w-cite a:visited {
+    color: #373737;
+}
+
+.w-cite a:hover {
+    font-weight: 600;
+    color: #373737;
+}
+
+/* INVENTION TECHNIQUES STYLES */
+.invention-header {
+    font-size: 2rem;
+}
+
+.i-h-imgs {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+    align-content: center;
+    width: 100%;
+    gap: 2%;
+    margin-top: 2%;
+}
+
+.invention-fig {
+    color: #DFD3D3;
+    background-color: #373737;
+    border-radius: 50px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    width: 40lvw;
+
+    margin: 1%;
+
+    transition: 1s;
+}
+
+.invention-fig:hover {
+    transform: scale(1.1);
+}
+
+.invention-img {
+    width: 100%;
+    border: 2px solid #4d47479c;
+}
+
+.i-img-caption {
+    padding: 2%;
+    text-indent: 0;
+    text-align: center;
+}
+
+@media (max-width: 800px) {
+    .invention-holder {
+        border-radius: 20px;
+    }
+    .invention-fig {
+        border-radius: 10px;
+        width: 90lvw;
+    }
+    .invention-fig:hover {
+        transform: scale(1.1);
+    }
+}

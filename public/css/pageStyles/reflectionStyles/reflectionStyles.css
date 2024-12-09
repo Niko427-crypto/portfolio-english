@@ -1,0 +1,78 @@
+@import url(../projectStyles/projectStyles.css);
+
+.card-holder {
+    display: grid;
+    grid-template-columns: auto auto;
+    align-items: center;
+
+    /* gap: 2%; */
+}
+
+.project-content {
+    padding: 0 10%;
+}
+
+.content-intro {
+    font-size: 1.2rem;
+    font-style: normal;
+}
+
+.reflection-header, .reflection-subheader {
+    text-align: right;
+}
+
+.reflection-header {
+    font-size: 1.5rem;
+}
+
+.reflection-subheader {
+    font-size: 1.2rem;
+    font-style: italic;
+}
+
+.content-text .essay-excerpt {   
+    display: flex;
+    flex-direction: column;
+    align-items: center;   
+}
+
+.content-text .essay-excerpt p {
+    font-style: italic;
+    font-size: 1rem;
+    text-align: left;
+    text-indent: 0;
+    width: 80%;
+}
+
+.content-text p {
+    line-height: 150%;
+}
+
+/* LEFT CARD STYLES*/
+
+
+/* RIGHT CARD STYLES */
+/* 
+    Nothing to display rn, change when semester two done ig.
+
+    When semester two ready, take off "display: none;" in the .right-card and 
+    add in "gap: 2%;" in .card-holder.
+*/
+.right-container {
+    display: none;
+}
+
+@media (max-width: 900px) {
+    .card-holder {
+        height: auto;
+    }
+}
+
+@media (max-width: 600px) {
+    .project-content {
+        padding: 0 4%;
+    }
+    .content-intro {
+        font-size: 1rem;
+    }
+}

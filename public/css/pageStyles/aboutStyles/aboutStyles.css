@@ -1,0 +1,171 @@
+/* @import url(../projectStyles/projectStyles.css); */
+
+.middle-container {
+    background-image: url('../../../imgs/projectImgs/modifiedCollageBackgroundImg.jpg');
+}
+
+.accordion-holder {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5% 0;
+}
+
+.accordion {
+    width: 60%;
+    border: 10px solid #7C7575;
+    border-radius: 25px;
+    background-color: #FBF0F0;
+    padding: 1%;
+}
+
+.accordion-content-holder {
+    border-radius: 25px;
+    padding: 1%;
+}
+
+.accordion-content-holder:last-child {
+    border-top: none;
+}
+
+.content-header {
+    border-bottom: 2px solid #ffffff;
+    border-radius: 25px;
+    background-color: #7C7575;
+    color: #000000;
+
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+
+    padding: 2% 5%;
+    cursor: pointer;
+}
+
+.content-header h2, .content-header h3 {
+    font-weight: 200;
+}
+
+.content-header.active h2, .content-header.active h3 {
+    font-weight: 600;
+}
+
+.content-header h2 {
+    font-size: 1.8rem;
+}
+
+.content-header h3 {
+    font-size: 1.5rem;
+}
+
+.a-arrow {
+    font-size: 1.5rem;
+    transition-duration: 1s;
+}
+
+.content-header h3 ~ .a-arrow {
+    font-size: 1rem;
+}
+
+.a-arrow.active {
+    transform: rotate(180deg);
+}
+
+.nested-arrow.active {
+    transform: rotate(135deg);
+}
+
+.content-text {
+    max-height: 0;
+    opacity: 0;
+    overflow: hidden;
+    transform: scaleY(0);
+    transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+.content-text.active {
+    max-height: 100%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    opacity: 1;
+    transform: scaleY(1);
+    transition: max-height 0.5s ease, opacity 0.5s ease, transform 0.5s ease;
+
+    background-color: #FBF0F0;
+    font-size: 1.2rem;
+    border-radius: 25px;
+
+    padding: 0 3%;
+}
+
+.content-text p {
+    text-align: justify;
+    padding: 2% 4% 0 4%;
+}
+
+.content-text p:first-child {
+    padding-top: 4%;
+}
+
+.content-text p:last-child, .content-text .a-p-introduction {
+    padding-bottom: 4%;
+}
+
+.content-text span {
+   font-variant: small-caps;
+   color: #7C7575;
+   font-size: 1rem;
+}
+
+.content-text span a {
+    color: #7C7575;
+}
+
+.content-text span a:visited {
+    color: #373737;
+}
+
+.content-text span a:hover {
+    font-weight: 600;
+    color: #373737;
+}
+
+.nested-accordion {
+    width: 99%;
+}
+
+.nested-accordion .content-header {
+    background-color: #B8B0B0;
+}
+
+.rb-about-img {
+    float: left;
+    width: 30%;
+    border-radius: 15px;
+    padding: 1%;
+}
+
+.fish-about-img {
+    float: right;
+}
+
+.ang-about-img, .ace-about-img {
+    float: none;
+}
+
+.a-me-bottom-imgs {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+@media (max-width: 600px) {
+    .accordion {
+        width: 90%;
+    }
+}

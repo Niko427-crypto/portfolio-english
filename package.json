@@ -1,0 +1,22 @@
+{
+  "name": "englishcompiportfolio",
+  "version": "1.0.0",
+  "description": "Portfolio of work completed in English Composition I at University of Arkansas Pulaski Technical College",
+  "main": "app.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Ricki Beckless",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.18.2",
+    "nodemailer": "^6.9.5",
+    "nodemailer-mailgun-transport": "^2.1.5",
+    "nodemon": "^3.0.1",
+    "path": "^0.12.7"
+  },
+  "devDependencies": {
+    "@flydotio/dockerfile": "^0.4.10"
+  }
+}
